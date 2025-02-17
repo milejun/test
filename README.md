@@ -86,7 +86,7 @@
 - 🏆 **奖项 2**：[奖项名称](#)
 
 ### j. 致谢
-- 🙏 感谢所有支持和贡献项目的个人和团队！
+- wisdomGPT 由 **冰智科技** 发起，孵化于 **清华 i-Space**，并获得 **启迪种子基金** 支持。特别感谢 **清华大学** 给予的帮助！
 
 ### k. Star History
 [![Star History Chart](https://api.star-history.com/svg?repos=your-github-username/your-project-name&type=Date)](https://star-history.com/#your-github-username/your-project-name&Date)

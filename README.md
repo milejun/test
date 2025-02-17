@@ -55,13 +55,47 @@
 - 🧠 **Cultural Commonsense Knowledge for Intercultural Dialogues**，CIKM 2024，[[论文]](https://dl.acm.org/doi/pdf/10.1145/3627673.3679768)，[[数据集]](https://mango.mpi-inf.mpg.de/)
   - 该数据集专注于跨文化对话中的常识性知识，旨在帮助模型更好地理解不同文化背景下的对话。
 
-
-
 ### b. 开源模型/论文情况
 #### i. 不同版本开源模型列表及其介绍
-- 🏗️ **基准模型**：基于开源的GPT模型，进行特定任务的微调，使其适用于心理咨询。
-- 🚀 **改进模型**：结合心理健康领域的专有数据集，通过强化学习等方法优化的模型，提升了在心理健康对话中的效果。
-- 📜 **更多模型**：链接到模型详细文档 [模型列表](./models/README.md)
+
+<div align="center">
+
+|         模型          |   微调方法   |               改进的模型              |   基准模型链接   |
+| :-------------------: | :------: | :---------------------------------: |:------: |
+|   **InternLM2_5_7B_chat**   | 全量微调   |  **InternLM2_5_7B_chat改进版**   |  [internlm2_5_chat_7b_full.py](./xtuner_config/internlm2_5_chat_7b_full.py)  | 
+|   **InternLM2_5_7B_chat**   | QLoRA   |  **InternLM2_5_7B_chat QLoRA**   |  [internlm2_5_chat_7b_qlora_oasst1_e3.py](./xtuner_config/internlm2_5_chat_7b_qlora_oasst1_e3.py)  | [ModelScope](https://www.modelscope.cn/models/z342994309/emollm_interlm2_5/) |
+|   **InternLM2_7B_chat**   | QLoRA   | **InternLM2_7B_chat QLoRA**    | [internlm2_7b_chat_qlora_e3.py](./xtuner_config/internlm2_7b_chat_qlora_e3.py)  | [ModelScope](https://modelscope.cn/models/aJupyter/EmoLLM/files) |
+|   **InternLM2_7B_chat**   | 全量微调   | **InternLM2_7B_chat Full Model**  | [internlm2_chat_7b_full.py](./xtuner_config/internlm2_chat_7b_full.py)  | [OpenXLab](https://openxlab.org.cn/models/detail/ajupyter/EmoLLM_internlm2_7b_full) |
+|   **InternLM2_7B_base**   | QLoRA   | **InternLM2_7B_base QLoRA**    | [internlm2_7b_base_qlora_e10_M_1e4_32_64.py](./xtuner_config/internlm2_7b_base_qlora_e10_M_1e4_32_64.py) | [OpenXLab](https://openxlab.org.cn/models/detail/chg0901/EmoLLM-InternLM7B-base-10e) |
+|   **InternLM2_1_8B_chat**   | 全量微调 | **InternLM2_1_8B_chat Full Model** | [internlm2_1_8b_full_alpaca_e3.py](./xtuner_config/internlm2_1_8b_full_alpaca_e3.py) | [OpenXLab](https://openxlab.org.cn/models/detail/ajupyter/EmoLLM_internlm2_1_8b_full/tree/main) |
+|   **InternLM2_20B_chat**   | LoRA   | **InternLM2_20B_chat LoRA**  | [internlm2_20b_chat_lora_alpaca_e3.py](./xtuner_config/internlm2_20b_chat_lora_alpaca_e3.py)  | |
+|   **Qwen_7b_chat**     | QLoRA   | **Qwen_7B_chat QLoRA**      | [qwen_7b_chat_qlora_e3.py](./xtuner_config/qwen_7b_chat_qlora_e3.py)  | |
+|   **Qwen1_5-0_5B-Chat** | 全量微调  | **Qwen1_5-0_5B-Chat Full Model** | [qwen1_5_0_5_B_full.py](./xtuner_config/qwen1_5_0_5_B_full.py) | [ModelScope](https://www.modelscope.cn/models/aJupyter/EmoLLM_Qwen1_5-0_5B-Chat_full_sft/summary) |
+|   **Baichuan2_13B_chat**  | QLoRA   | **Baichuan2_13B_chat QLoRA**   | [baichuan2_13b_chat_qlora_alpaca_e3.py](./xtuner_config/baichuan2_13b_chat_qlora_alpaca_e3.py) | |
+|   **ChatGLM3_6B**    | LoRA   | **ChatGLM3_6B LoRA**   | [chatglm3_6b_lora_alpaca_e3.py](./xtuner_config/chatglm3_6b_lora_alpaca_e3.py) | |
+|   **DeepSeek MoE_16B_chat**  | QLoRA   | **DeepSeek MoE_16B_chat QLoRA** | [deepseek_moe_16b_chat_qlora_oasst1_e3.py](./xtuner_config/deepseek_moe_16b_chat_qlora_oasst1_e3.py) | |
+|   **Mixtral 8x7B_instruct**   | QLoRA   | **Mixtral 8x7B_instruct QLoRA**   | [mixtral_8x7b_instruct_qlora_oasst1_e3.py](./xtuner_config/mixtral_8x7b_instruct_qlora_oasst1_e3.py)  | |
+|   **LLaMA3_8B_instruct**    | QLoRA   | **LLaMA3_8B_instruct QLoRA**  | [aiwei_llama3_8b_instruct_qlora_e3.py](./xtuner_config/aiwei_llama3_8b_instruct_qlora_e3.py) | [OpenXLab](https://openxlab.org.cn/models/detail/ajupyter/EmoLLM-LLaMA3_8b_instruct_aiwei/tree/main) |
+|   **LLaMA3_8B_instruct**    | QLoRA   | **LLaMA3_8B_instruct QLoRA**  | [llama3_8b_instruct_qlora_alpaca_e3_M_ruozhi_scM.py](./xtuner_config/llama3_8b_instruct_qlora_alpaca_e3_M_ruozhi_scM.py) | [OpenXLab](https://openxlab.org.cn/models/detail/chg0901/EmoLLM-Llama3-8B-Instruct3.0) |
+|   **Qwen2-7B-Instruct**    | LoRA   | **Qwen2-7B-Instruct LoRA**   | [Qwen2-7B-Instruct_lora.py](./xtuner_config/Qwen2-7B-Instruct_lora.py)  | [ModelScope](https://www.modelscope.cn/models/aJupyter/EmoLLM_Qwen2-7B-Instruct_lora/) |
+
+</div>
+
+#### ii. 论文情况
+
+<div align="center">
+
+|       论文标题       | 发表会议   |                                                   链接                                                   |
+| :-------------------: | :--------: | :------------------------------------------------------------------------------------------------------: |
+| **The PRISM Alignment Dataset: What Participatory, Representative and Individualised Human Feedback Reveals About the Subjective and Multicultural Alignment of Large Language Models** | NeurIPS 2024 D&B Track | [论文](https://arxiv.org/abs/2404.16019) |
+| **ValueBench: Towards Comprehensively Evaluating Value Orientations and Understanding of Large Language Models** | ACL 2024 | [论文](https://arxiv.org/abs/2406.04214)，[代码](https://github.com/Value4AI/ValueBench) |
+| **Automating Dataset Updates Towards Reliable and Timely Evaluation of Large Language Models** | NeurIPS 2024 | [论文](https://arxiv.org/abs/2402.11894) |
+| **HATEDAY: Insights from a Global Hate Speech Dataset Representative of a Day on Twitter** | 2024.11 | [论文](https://arxiv.org/abs/2411.15462) |
+| **COMPO: Community Preferences for Language Model Personalization** | 2024.10 | [论文](https://arxiv.org/pdf/2410.16027) |
+| **Cultural Commonsense Knowledge for Intercultural Dialogues** | CIKM 2024 | [论文](https://dl.acm.org/doi/pdf/10.1145/3627673.3679768)，[数据集](https://mango.mpi-inf.mpg.de/) |
+
+</div>
+
 
 ### c. CARE 方案 (文献综述与共享)
 #### i. Compassion

@@ -21,20 +21,41 @@
 </p>
 
 ### a. 数据集
-#### i. 不同类型数据集及介绍
-- 🧠 **心理健康数据集**：该数据集包含大量心理健康对话数据，旨在为模型提供心理咨询相关的对话训练数据。
+#### i. 心理学伦理守则数据集
+- 🧠 **心理学伦理守则数据集**：该数据集包括心理学领域的伦理守则，帮助模型理解与伦理相关的咨询情境，提升其伦理判断能力。
+
+#### ii. 对话数据集
+- 💬 **对话数据集**：该数据集包含大量心理健康对话数据，旨在为模型提供心理咨询相关的对话训练数据。
+
+#### iii. 情绪识别数据集
 - 😌 **情绪识别数据集**：用于提升模型识别情绪的能力，帮助模型更好地理解用户情绪并提供精准的反馈。
-- 📂 **更多数据集**：链接到数据集详细文档 [数据集文档](./datasets/README.md)
+
+#### iv. 其他数据集
+- 🌍 **The PRISM Alignment Dataset: What Participatory, Representative and Individualised Human Feedback Reveals About the Subjective and Multicultural Alignment of Large Language Models**，NeurIPS 2024 D&B Track 最佳论文，[[论文]](https://arxiv.org/abs/2404.16019)
+  - 该数据集提供了来自多元文化背景的参与式反馈，揭示了人类反馈在大型语言模型中的对齐情况。
   
-#### ii. 相关数据集与文献
-- **The PRISM Alignment Dataset: What Participatory, Representative and Individualised Human Feedback Reveals About the Subjective and Multicultural Alignment of Large Language Models**，NeurIPS 2024 D&B Track 最佳论文，[[论文]](https://arxiv.org/abs/2404.16019)
 - ⭐️ **ValueBench: Towards Comprehensively Evaluating Value Orientations and Understanding of Large Language Models**，ACL 2024，[[论文]](https://arxiv.org/abs/2406.04214)，[[代码]](https://github.com/Value4AI/ValueBench)
-- **Automating Dataset Updates Towards Reliable and Timely Evaluation of Large Language Models**，NeurIPS 2024，[[论文]](https://arxiv.org/abs/2402.11894)
-- [CLUE Dataset Search](https://github.com/CLUEbenchmark/CLUEDatasetSearch)
-- **HATEDAY: Insights from a Global Hate Speech Dataset Representative of a Day on Twitter**，2024.11，[[论文]](https://arxiv.org/abs/2411.15462)
-- [LIT 下载链接](https://lit.eecs.umich.edu/downloads.html)
-- **COMPO: Community Preferences for Language Model Personalization**，2024.10，[[论文]](https://arxiv.org/pdf/2410.16027)
-- **Cultural Commonsense Knowledge for Intercultural Dialogues**，CIKM 2024，[[论文]](https://dl.acm.org/doi/pdf/10.1145/3627673.3679768)，[[数据集]](https://mango.mpi-inf.mpg.de/)
+  - 这个数据集旨在全面评估大型语言模型的价值取向和理解能力，提供了广泛的测试框架。
+
+- 🔄 **Automating Dataset Updates Towards Reliable and Timely Evaluation of Large Language Models**，NeurIPS 2024，[[论文]](https://arxiv.org/abs/2402.11894)
+  - 该数据集专注于自动化数据集更新，确保大型语言模型的评估始终可靠且及时。
+
+- 🔍 [CLUE Dataset Search](https://github.com/CLUEbenchmark/CLUEDatasetSearch)
+  - CLUE是一个全面的数据集搜索工具，帮助用户查找和访问多种语言的NLP数据集。
+
+- 💬 **HATEDAY: Insights from a Global Hate Speech Dataset Representative of a Day on Twitter**，2024.11，[[论文]](https://arxiv.org/abs/2411.15462)
+  - 该数据集收集了Twitter上一天内的仇恨言论数据，旨在研究社交媒体上的言论行为和情绪传播。
+
+- 🌐 [LIT 下载链接](https://lit.eecs.umich.edu/downloads.html)
+  - LIT是一个面向多语言和跨文化对话的NLP工具，提供了多种资源下载。
+
+- 🔄 **COMPO: Community Preferences for Language Model Personalization**，2024.10，[[论文]](https://arxiv.org/pdf/2410.16027)
+  - 该数据集用于了解和收集社区对于语言模型个性化的偏好，为模型优化提供依据。
+
+- 🧠 **Cultural Commonsense Knowledge for Intercultural Dialogues**，CIKM 2024，[[论文]](https://dl.acm.org/doi/pdf/10.1145/3627673.3679768)，[[数据集]](https://mango.mpi-inf.mpg.de/)
+  - 该数据集专注于跨文化对话中的常识性知识，旨在帮助模型更好地理解不同文化背景下的对话。
+
+
 
 ### b. 开源模型/论文情况
 #### i. 不同版本开源模型列表及其介绍

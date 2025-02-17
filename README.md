@@ -118,16 +118,34 @@
 - 🌐 [项目主页](https://your-project-link.com)
 - 📄 [项目文档](./README.md)
 
-### e. 最近更新
-- ✅ **多智能体模拟心理咨询**
+## 🎇 最近更新
+
+- 【2025.02.16】**多智能体模拟心理咨询**
   - 🔬 论文 *A Simulated Well-being Ecosystem Featuring Positive Nudge Agents* 已投稿 2025 ICRA
   - 📌 代码仓库：[aitown-env3-upload](https://github.com/glacierwisdom/aitown-env3-upload)
 
-- ✅ **让大模型更了解心理**
+- 【2025.02.15】**让大模型更了解心理**
   - 🎯 采用 [Qwen2.5-32B](https://huggingface.co/Qwen/Qwen2.5-32B-Instruct) 进行微调
   - 🧠 详细微调结果：[README](sft_0926_lr5e-5/README.md)
   - 📊 心理大模型评测：[国内心理大模型调研](https://github.com/glacierwisdom/wisdomGPT/blob/main/_DocumentRSS/PsycoLLM_evaluate.md)
   - 📂 数据集构建：[数据集与提示词](dataset_constructer)
+
+- 【2025.02.10】**心理健康对话数据集更新**
+  - 📚 新增了多轮对话数据集，扩展了模型训练数据。
+  - 📌 数据集详细信息：[数据集文档](./datasets/README.md)
+
+- 【2025.02.05】**情绪识别模型优化**
+  - 🎯 采用新的情绪识别方法对模型进行优化，提高了识别精度。
+  - 🧠 详细微调结果：[情绪识别微调日志](emotion_tuning_log.md)
+
+- 【2025.01.30】**新版本的心理咨询模型发布**
+  - 🚀 发布了基于Qwen2-32B-Instruct模型的最新版本，优化了情感分析和情绪识别功能。
+  - 📌 模型文件下载：[Qwen2-32B-Instruct模型](https://huggingface.co/Qwen/Qwen2.5-32B-Instruct)
+
+- 【2025.01.25】**更新了心理健康大语言模型的评测标准**
+  - 📊 新增评测维度：文化敏感性、情感表达和语言流畅度。
+  - 📑 详细文档：[评测标准文档](./docs/evaluation_criteria.md)
+
 
 
 ### f. 项目概况

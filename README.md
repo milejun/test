@@ -118,7 +118,7 @@
 - 🌐 [项目主页](https://your-project-link.com)
 - 📄 [项目文档](./README.md)
 
-## 🎇 最近更新
+### e.最近更新
 
 - 【2025.02.16】**多智能体模拟心理咨询**
   - 🔬 论文 *A Simulated Well-being Ecosystem Featuring Positive Nudge Agents* 已投稿 2025 ICRA

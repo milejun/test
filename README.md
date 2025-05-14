@@ -9,9 +9,6 @@
 
 基于LangChain架构构建的法律领域检索增强生成系统，深度整合200+部法律法规文本与大语言模型能力，实现精准的法律条文检索与专业解答生成。采用向量数据库+LLM双引擎架构，支持流式响应输出。
 
-## 在线体验
-[https://law.vmaig.com/](https://law.vmaig.com/)
-
 ⚠️ 访问凭证：
 - 用户名：`username`
 - 密码：`password`
@@ -35,12 +32,13 @@ flowchart TD
     J --> K[LLM生成回答]
     K --> L[渐进式输出]
 ```
+```mermaid
 flowchart LR
     A[法律文本加载] --> B[章节结构化解析]
     B --> C[递归文本分块]
     C --> D[语义向量编码]
     D --> E[Chroma向量存储]
-
+```
 
 ### 环境准备
 # 创建配置文件

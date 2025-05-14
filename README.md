@@ -35,7 +35,6 @@ flowchart TD
     J --> K[LLM生成回答]
     K --> L[渐进式输出]
 
-
 ### 数据初始化流程
 flowchart LR
     A[法律文本加载] --> B[章节结构化解析]

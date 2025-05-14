@@ -32,6 +32,7 @@ flowchart TD
     J --> K[LLM生成回答]
     K --> L[渐进式输出]
 ```
+### 初始化流程
 ```mermaid
 flowchart LR
     A[法律文本加载] --> B[章节结构化解析]

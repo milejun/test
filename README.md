@@ -34,7 +34,7 @@ flowchart TD
     I --> J[上下文融合]
     J --> K[LLM生成回答]
     K --> L[渐进式输出]
-
+```
 flowchart LR
     A[法律文本加载] --> B[章节结构化解析]
     B --> C[递归文本分块]

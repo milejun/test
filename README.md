@@ -13,6 +13,7 @@
 - 用户名：`username`
 - 密码：`password`
 # 环境准备
+## 请在linux环境下操作此项目
 ### 创建配置文件
 cp .env.example .env && vim .env
 

@@ -41,22 +41,22 @@ flowchart LR
     D --> E[Chroma向量存储]
 ```
 
-### 环境准备
-# 创建配置文件
+# 环境准备
+### 创建配置文件
 cp .env.example .env && vim .env
 
-# 创建虚拟环境
+### 创建虚拟环境
 python -m venv ~/.venvs/legal-rag
 source ~/.venvs/legal-rag/bin/activate
 
-# 安装依赖
+### 安装依赖
 pip install -r requirements.txt
 
-###初始化与交互
-# 构建法律向量库（首次运行必选）
+##初始化与交互
+### 构建法律向量库（首次运行必选）
 python manager.py --init-db
 
-# 启动Web服务
+### 启动Web服务
 python manager.py --web
 
 
